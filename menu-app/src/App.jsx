@@ -58,9 +58,9 @@ function App() {
    },
   ]
   return (
-    <div className="App">Menu App
-    {/* <MenuApp /> // example */}
-    <MenuApp data = {menuData} />
+    <div className="App">
+      <h1>Menu App</h1>
+      <MenuApp data = {menuData} />
     </div>
   )
 }

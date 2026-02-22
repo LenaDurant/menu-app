@@ -1,4 +1,4 @@
-import React from "react"
+// import React from "react"
 
 const MenuItem = ({itemId, itemPrice, itemName, itemDescription}) => {
   return (
@@ -8,7 +8,7 @@ const MenuItem = ({itemId, itemPrice, itemName, itemDescription}) => {
       <p>{itemDescription}</p>
       <button>Add to Cart</button>
     </div>
-  );
+  )
 }
 
-export default MenuItem;
+export default MenuItem
