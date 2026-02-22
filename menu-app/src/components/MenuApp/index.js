@@ -1,15 +1,15 @@
-import MenuItem from "../MenuItem"
+import Menu from "../Menu"
 
-const MenuApp = () => {
-  let menuItem = {         
-    "itemId": 1,         
-    "itemPrice": "12",         
-    "itemName": "Lasagne",         
-    "itemDescription": "Meat and cheese layered between house-made pasta with bell peppers and onions." 
-  }
+let MenuApp = ({data}) => {        
   return (
     <div className="App">
-      <MenuItem items={menuItem}></MenuItem>
+      {data.map((menu) => (
+        <Menu
+          key={menu.menuName}
+          menuName={menu.menuName}
+          menuItems={menu.menuItems}
+        />
+      ))}
     </div>
   )
 }

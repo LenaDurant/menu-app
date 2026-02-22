@@ -3,7 +3,7 @@ import './App.css'
 import MenuApp from './components/MenuApp'
 
 function App() {
-  let menuData = [
+  const menuData = [
     {
      "menuName": "Dinner",
      "menuItems": [
