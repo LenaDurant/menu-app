@@ -11,4 +11,4 @@ const MenuItem = ({itemId, itemPrice, itemName, itemDescription}) => {
   )
 }
 
-export default MenuItem
+export default MenuItem;

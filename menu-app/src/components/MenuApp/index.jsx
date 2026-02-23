@@ -4,14 +4,14 @@ let MenuApp = ({data}) => {
   return (
     <div className="App">
       {data.map((menu) => (
-        <Menu
-          key={menu.menuName}
-          menuName={menu.menuName}
-          menuItems={menu.menuItems}
+        <Menu key={menu.menuName} {...menu}
+          // key={menu.menuName}
+          // menuName={menu.menuName}
+          // menuItems={menu.menuItems}
         />
       ))}
     </div>
   )
 }
 
-export default MenuApp
+export default MenuApp;
